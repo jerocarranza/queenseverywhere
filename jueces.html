@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Queens Everywhere - Jueces</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="Css/estilos.css" />
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<a href="index.html" class="cabeza">QueensEverywhere</a>
+		
+		<nav>
+			<a href="javascript:void(0);" class="icono" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			<ul id="mibarra" class="barratop">
+				<li><a href="ganadoras.html" class="nave">Ganadoras</a></li>
+				<li><a href="jueces.html" class="nave">Jueces</a></li>
+				<li><a href="challenges.html" class="nave">Challenges</a></li>
+				<li><a href="https://open.spotify.com/embed/playlist/0Y4hSTj9khJyzj2n4jm7zx" class="nave" target="_blank">Música</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<section>
+	<h1>JUECES</h1>
+
+
+	
+	<div class="cajaslids">
+		
+		<img src="imagenes/Jueces/j1.jpg" alt="Noticia principal" class="SlidesChallenges">
+		<img src="imagenes/Jueces/J2.jpg" class="SlidesChallenges">
+		<img src="imagenes/Jueces/j3.JPG" class="SlidesChallenges">
+		<img src="imagenes/Jueces/je.JPG" class="SlidesChallenges">
+		<img src="imagenes/Jueces/j4.JPG" class="SlidesChallenges">
+		
+		<a onclick="plusDivs(-1)" class="ant"><<</a>
+		<a onclick="plusDivs(+1)" class="sig">>></a>
+		
+	</div>
+	
+	<h1 class="titulochallenge">Es momento de la votación</h1>
+	
+	<h2 class="hchallenges">Los jueces determinan cual es la Queen ganadora de cada semana<br> y cuales se encuentran en el bottom</h2>
+	
+	<p class="textochalleges">
+		
+		RuPaul además de conducir el programa es el principal juez junto a Michelle Visage, Carson Kressley y Ross Mathews. Ellos tres se encargan de asesorar a Ru pero la decisión final siempre la tomas ella.<br>
+		Cada semana se suman a esta divertida tarea distintos jueces invitados entre ellos se encuentran artistas, deportistas, empresarios, políticos y mucho más. En este papel puedimos ver a Lady Gaga, Ricky Martin, Nicky Minaj, Miley Cyrus, Ariana Grande y muchos más.
+	
+		
+	</p>
+	
+	<div>
+		<div class="cajas2">
+			<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/v3RFdokNTbw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+		<div class="cajas2">
+			<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/g-9OReNW4P0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	
+	<h2 class="hchallenges">También te puede interesar</h2>
+	
+	<div>
+		<div class="caja4">
+			<img src="imagenes/CHICHI.jpg">
+			<h2>Últimó adios a ChiChi</h2>
+			<a href="chichi.html">Ver más</a>
+		</div>
+		<div class="caja4">
+			<img src="imagenes/MICHELLE.jpg">
+			<h2>¿Michelle en otro reality?</h2>
+			<a href="michelle.html">Ver más</a>
+		</div>
+		<div class="caja4">
+			<img src="imagenes/SHEA.jpeg.jpg">
+			<h2>Shea la nueva AllStar</h2>
+			<a href="shea.html">Ver más</a>
+		</div>
+		<div class="caja4">
+			<img src="imagenes/VEGAS.jpg">
+			<h2>RuPaul's Drag Race: Vegas Revue</h2>
+			<a href="vegas.html">Ver más</a>
+		</div>
+	</div>
+	
+<script language="javascript">
+function myFunction() {
+  var x = document.getElementById("mibarra");
+  if (x.className === "barratop") {
+    x.className += " responsive";
+  } else {
+    x.className = "barratop";
+  }
+}
+</script>
+	
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+	// acá define qué elemento entra en el slider
+    var x = document.getElementsByClassName("SlidesChallenges");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+    
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("SlidesChallenges");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 1500); // Cambia la imagen cada 2 segundos
+}	
+
+</script>
+	
+</section>
+	
+	<footer>Carranza Arzeno Jeronimo - © 2020</footer>
+</body>
+</html>

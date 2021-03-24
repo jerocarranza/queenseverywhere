@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-1">
+<title>Queens Everywhere</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="Css/estilos.css" />
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<a href="index.html" class="cabeza">QueensEverywhere</a>
+		
+		<nav>
+			<a href="javascript:void(0);" class="icono" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			<ul id="mibarra" class="barratop">
+				<li><a href="ganadoras.html" class="nave">Ganadoras</a></li>
+				<li><a href="jueces.html" class="nave">Jueces</a></li>
+				<li><a href="challenges.html" class="nave">Challenges</a></li>
+				<li><a href="https://open.spotify.com/embed/playlist/0Y4hSTj9khJyzj2n4jm7zx" class="nave" target="_blank">Música</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<section>
+	<h1>QueensEverywhere</h1>
+	
+	<div class="noticia1">
+		<img src="imagenes/RUPAUL.jpg" class="cajaslids">
+		<h1 class="titulochallenge">NUEVA TEMPORARA CONFIRMADA</h1>
+		<h2 class="hchallenges">La season 13 ya tiene fecha de estreno</h2>
+		<a href="trece.html">Ver más</a>
+	</div>
+	
+	
+	<div>
+		<div class="cajas2">
+			<img src="imagenes/HOLLAND.jpg">
+			<h2>Arranca DragRace Holanda!</h2>
+			<p>Conoce a las nuevas Queens</p>
+			<a href="holanda.html">Ver más</a>
+		</div>
+		
+		<div class="cajas2">
+			<img src="imagenes/PRYANKA.png">
+			<h2>Canadá ya tiene su primera ganadora</h2>
+			<p>Pryanka, la primera gandora con descendencia India</p>
+			<a href="canada.html">Ver más</a>
+		</div>
+	</div>
+	
+	<h2 class="hchallenges">También te puede interesar</h2>
+	
+	<div>
+		<div class="caja4">
+			<img src="imagenes/CHICHI.jpg">
+			<h2>Último adiós a ChiChi</h2>
+			<a href="chichi.html">Ver más</a>
+		</div>
+		<div class="caja4">
+			<img src="imagenes/MICHELLE.jpg">
+			<h2>¿Michelle en otro reality?</h2>
+			<a href="michelle.html">Ver más</a>
+		</div>
+		<div class="caja4">
+			<img src="imagenes/SHEA.jpeg.jpg">
+			<h2>Shea la nueva AllStar</h2>
+			<a href="shea.html">Ver más</a>
+		</div>
+		<div class="caja4">
+			<img src="imagenes/VEGAS.jpg">
+			<h2>RuPaul's Drag Race: Vegas Revue</h2>
+			<a href="vegas.html">Ver más</a>
+		</div>
+	</div>
+	
+	<form action="enviado.html" method="post">
+		Suscribite y recibí novedades todas las semanas
+        <p><label>Nombre:</label> <input name="name" type="text" required placeholder="Nombre"> </p>
+        <p><label>Email:</label> <input name="name" type="email" required placeholder="Email"> </p>
+        <p><label>Comentarios:</label><textarea name="comentarios"></textarea></p>
+
+        <p><input type="submit" name="enviar" id="button" value="Quiero más!"></p>
+    </form>
+
+<script language="javascript">
+function myFunction() {
+  var x = document.getElementById("mibarra");
+  if (x.className === "barratop") {
+    x.className += " responsive";
+  } else {
+    x.className = "barratop";
+  }
+}
+</script>
+	
+	
+</section>
+	
+	<footer>Carranza Arzeno Jeronimo - © 2020</footer>
+	<a style="text-align: center; padding: 15px; background-color: white; clear: both; float: left" href="http://producciondigitalup.com/sitioup/67633/mail">mailing</a>
+</body>
+</html>

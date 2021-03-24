@@ -1,0 +1,137 @@
+* {margin: 0; padding: 0; box-sizing: border-box}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {background-color: #FFFFFF; Color: #000000; margin: 0; font-family: 'PT Sans', sans-serif; font-size: 20px}
+
+/* Propiedades para la barra de navecacion */
+
+header {background-color: #000000; text-align: left; padding: 12px; position: sticky; top: 0; font-family: fantasy; z-index: 1}
+
+.cabeza {color: white; text-decoration: none; font-size: 30px; position: left}
+
+.nave {font-size: 25px}
+
+.jueces {font-size: 25px; text-align: center; color: #FF00CB; font-family: fantasy}
+
+a {color: #FF00E0; font-size: 15px; text-align: center; position: center}
+
+nav {float: right; background-color: black; font-size: 30px; font-family: fantasy}
+
+nav ul {list-style: none; text-align: right; display: flex}
+nav ul li { display: inline; position: relative;}
+nav ul li a { color: #737373; background-color: #000000; text-decoration: none; display: inline-block}
+
+header nav a {color: #737373; background-color: #000000; text-decoration: none; padding: 5px; display: inline-block}
+	
+header nav a:hover {color: #FFFFFF; background-color: #000000; text-decoration: none; padding: 5px; display: inline-block}
+
+nav .icono {display: none}
+
+nav ul .responsive {display: block}
+
+
+
+/* Propiedades generales del cuerpo */
+
+h1 {font-size: 60px; border-bottom: 5px solid white; text-align: center; color: #FF00B6; font-family: fantasy; padding: 10px}
+
+h2 {clear: both}
+
+section {padding: 10px}
+
+img {width: 100%; margin: none; display: block}
+
+.titulo {text-align: left}
+
+div {display: flex; flex-flow: wrap}
+
+div h2 {font-family: fantasy}
+
+.noticia1 {display: block}
+
+.cajas2 {background-color: white; text-align: left; width: 48%; margin: 1%; display: block; padding: 10px; box-sizing: border-box}
+
+.caja4 {background-color: #D2D2D2; text-align: left; width: 21%; margin: 1%; display: block; padding: 10px; box-sizing: border-box}
+
+.jurado {background-color: #C0C0C0; text-align: left; width: 21%; margin: 1%; display: block; padding: 10px; box-sizing: border-box}
+
+footer {text-align: center; padding: 15px; background-color: white; border-top: 10px solid hotpink; clear: both}
+
+p {max-width: 850px; margin: auto; font-size: 15px}
+
+
+
+/* Propiedades del formnulario */
+
+form { background-color: hotpink; padding: 20px; }
+label { width:100px; float: left;}
+p {margin:4px;}
+input, select, textarea { background-color: aliceblue; border: 1px solid orange; border-radius:6px; width: 80%; padding: 6px;}
+input[type=radio], input[type=checkbox]{ width:auto; background-color:black; color: white;}
+input[type=submit]{ width:auto; background-color:black; color: white;}
+
+
+
+/* Propiedades de ajuste Ganadoras */
+
+
+.cajaganadoras {float: left; width: 100px; padding-bottom: 45px; padding-top: 45px}
+
+
+
+/* Propiedades de ajuste Challenges */
+
+  
+.cajaslids {text-align: center; position: relative; width: 90%; margin: auto}
+.cajaslids img { width: 100%;}
+.cajaslids a { font-size: 30px; background-color: black; color: #FF00CB; text-decoration: none; padding: 10px; border-radius: 40%; position: absolute; top: 40%;}
+.cajaslids a.ant { left: 10px;}
+.cajaslids a.sig { right: 10px;}  
+
+.titulochallenge {padding: 10px}
+.hchallenges {text-align: center; padding-left: 5px}
+.textochalleges {margin: auto; padding: 40px; text-align: justify}
+
+
+
+/* Propiedades de ajustes a distintos dispositivos */
+
+@media(max-width: 768px)
+{
+	h1 {font-size: 40px}
+	header { text-align: center} 
+   	nav ul li { display: block;}
+    nav ul li a { display: block;}
+	.caja4 {width: 48%}
+	.jurado {width: 48%}
+
+	.youtube {width: 98%;}
+	
+	.hchallenges {text-align: left}
+}
+
+@media(max-width: 480px) 
+{
+	  h1 {font-size: 30px}
+	  header { text-align: center} 
+   	  nav ul li { display: block;}
+      nav ul li a { display: block;}
+	
+	.cajas2 {width: 98%;}
+	.caja4 {width: 98%;}
+	.jurado {width: 98%;}
+	
+	.youtube {width: 98%;}
+	
+	nav ul {display: none; position: absolute; text-align: center; left: 0; width: 100%}
+	nav .icono {display: block; font-size: 15px}
+	nav ul.responsive {display: block}
+	
+	.cajaganadoras {padding-bottom: 5px; padding-top: 5px; position: center}
+	
+	.cajaslids a {font-size: 20px; padding: 5px}
+	
+	.hchallenges {text-align: left}
+}
